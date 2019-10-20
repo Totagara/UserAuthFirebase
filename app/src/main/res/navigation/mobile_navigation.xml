@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dave.davelogin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.dave.davelogin.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.dave.davelogin.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/actionVerifyPhone"
+            app:destination="@id/verifyPhoneFragment" />
+        <action
+            android:id="@+id/action_updateEmail"
+            app:destination="@id/updateEmailFragment" />
+        <action
+            android:id="@+id/actionUpdatePassword"
+            app:destination="@id/updatePasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.dave.davelogin.ui.slideshowOld.SlideshowFragmentOld"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.dave.davelogin.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.dave.davelogin.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.dave.davelogin.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/verifyPhoneFragment"
+        android:name="com.dave.davelogin.ui.VerifyPhoneFragment"
+        android:label="Verify Phone"
+        tools:layout="@layout/fragment_verify_phone">
+        <action
+            android:id="@+id/actionPhoneVerified"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEmailFragment"
+        android:name="com.dave.davelogin.ui.UpdateEmailFragment"
+        android:label="Update Email"
+        tools:layout="@layout/fragment_update_email">
+        <action
+            android:id="@+id/action_emailUpdated"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="com.dave.davelogin.ui.UpdatePasswordFragment"
+        android:label="Update Password"
+        tools:layout="@layout/fragment_update_password" >
+        <action
+            android:id="@+id/actionPasswordUpdated"
+            app:destination="@id/nav_profile" />
+    </fragment>
+</navigation>
