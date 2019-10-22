@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "698598077490",
-    "firebase_url": "https://davelogin-c6000.firebaseio.com",
-    "project_id": "davelogin-c6000",
-    "storage_bucket": "davelogin-c6000.appspot.com"
+    "project_number": "79481785031",
+    "firebase_url": "https://userauth-e6ae3.firebaseio.com",
+    "project_id": "userauth-e6ae3",
+    "storage_bucket": "userauth-e6ae3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:698598077490:android:a7a3832422baa3db4af82b",
+        "mobilesdk_app_id": "1:79481785031:android:aca78b50addd289c7d8ce2",
         "android_client_info": {
-          "package_name": "com.dave.davelogin"
+          "package_name": "com.dave.userauth"
         }
       },
       "oauth_client": [
         {
-          "client_id": "698598077490-u59lg5j1hie3gftrghejn42jio1rouqo.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.dave.davelogin",
-            "certificate_hash": "dfaafb1161aa7a8a2a8e74dd913193aa5e3146b7"
-          }
-        },
-        {
-          "client_id": "698598077490-dda27hfskdoecn6t0smeo4flnt0t76gg.apps.googleusercontent.com",
+          "client_id": "79481785031-be7sivgun10gtsllotk132sr4tl5r4om.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBdvGHtKEAFICkY6Ceik2DUm9KAyqVxOXw"
+          "current_key": "AIzaSyA3yywB1DHnf5gY3UQZS91ix5bsiwDlttc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "698598077490-dda27hfskdoecn6t0smeo4flnt0t76gg.apps.googleusercontent.com",
+              "client_id": "79481785031-be7sivgun10gtsllotk132sr4tl5r4om.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

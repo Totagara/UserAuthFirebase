@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='DaveLogin'
+rootProject.name='userauth'

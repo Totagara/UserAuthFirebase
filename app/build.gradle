@@ -8,7 +8,7 @@ android {
         enabled = true
     }
     defaultConfig {
-        applicationId "com.dave.davelogin"
+        applicationId "com.dave.userauth"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -43,13 +43,22 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.google.firebase:firebase-storage:16.0.4'
 
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
     //For picture upload
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     //For country code selection
     implementation 'com.hbb20:ccp:2.3.2'
 
+    //CircularImageView by Lopez Mikhael is licensed under a Apache License 2.0.
+    //For circular profile pic image
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+//for firebase
+apply plugin: 'com.google.gms.google-services'
